@@ -15,7 +15,7 @@
 ## General info
 This project is for additional purposes only, feel free to fork our project and modify into your own
 
-## Screenshots
+## Screenshot
 ![Dashboard Preview](https://user-images.githubusercontent.com/58504115/78089880-d15c7a00-73f2-11ea-8bae-5429f684f302.png)
 
 ## Back-End Technologies
