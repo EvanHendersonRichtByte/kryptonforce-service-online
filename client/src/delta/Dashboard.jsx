@@ -73,10 +73,10 @@ export default class Dashboard extends Component {
 											<div className='card-body-icon'>
 												<i className='fa fa-fw fa-comments' />
 											</div>
-											<div className='mr-5'>26 New Messages!</div>
+											<div className='mr-5'>Sparepart Table Data</div>
 										</div>
-										<a className='card-footer text-white clearfix small z-1' href='/dashboard'>
-											<span className='float-left'>View Details</span>
+										<a className='card-footer text-white clearfix small z-1' href='/sparepart'>
+											<span className='float-left'>View Spareparts</span>
 											<span className='float-right'>
 												<i className='fa fa-angle-right' />
 											</span>
@@ -105,10 +105,10 @@ export default class Dashboard extends Component {
 											<div className='card-body-icon'>
 												<i className='fa fa-fw fa-shopping-cart' />
 											</div>
-											<div className='mr-5'>123 New Orders!</div>
+											<div className='mr-5'>There's new Employee!</div>
 										</div>
-										<a className='card-footer text-white clearfix small z-1' href='/dashboard'>
-											<span className='float-left'>View Details</span>
+										<a className='card-footer text-white clearfix small z-1' href='/employee-acceptance'>
+											<span className='float-left'>Check Employee Registrations</span>
 											<span className='float-right'>
 												<i className='fa fa-angle-right' />
 											</span>
@@ -121,10 +121,10 @@ export default class Dashboard extends Component {
 											<div className='card-body-icon'>
 												<i className='fa fa-fw fa-support' />
 											</div>
-											<div className='mr-5'>13 New Tickets!</div>
+											<div className='mr-5'>Admin Dashboard</div>
 										</div>
 										<a className='card-footer text-white clearfix small z-1' href='/dashboard'>
-											<span className='float-left'>View Details</span>
+											<span className='float-left'>View Dashboard</span>
 											<span className='float-right'>
 												<i className='fa fa-angle-right' />
 											</span>

@@ -50,6 +50,13 @@ export default class IssueList extends Component {
 		return <span>{total}</span>;
 	}
 
+	handleIssueClose(res) {
+		axios.delete('/issue/' + res._id).then((res) => {
+			alert('your issue has been canceled');
+			window.location.assign('/issue-list');
+		});
+	}
+
 	isPaid(res) {
 		if (res.status === 'Unresolved' && res.damages < 0) {
 			return (
@@ -120,7 +127,7 @@ export default class IssueList extends Component {
 												{res.damages.map((data) => {
 													return (
 														<li key={data._id}>
-															{data.title} ${data.price} ${data.quantity}
+															{data.title} ${data.price} || {data.quantity}
 														</li>
 													);
 												})}
@@ -133,14 +140,15 @@ export default class IssueList extends Component {
 												</div>
 											</div>
 										</td>
-										<td className='text-center'>
-											<button
-												onClick={this.handleModalStatus}
-												className='btn btn-outline-warning'
-												disabled={res.damages <= 0 || res.status === 'Have Paid'}
-											>
-												{res.damages <= 0 ? <span className='text-danger'>Unresolved</span> : <span>Pay Now</span>}
+										<td className='text-center d-flex justify-content-around'>
+											<button onClick={() => this.handleIssueClose(res)} className='btn btn-outline-warning'>
+												{res.damages <= 0 ? <span className='text-danger'>Cancel Issue</span> : <span>Pay Now</span>}
 											</button>
+											{res.image && (
+												<button className='btn btn-outline-danger' onClick={() => this.handleIssueClose(res)}>
+													Mark as Closed
+												</button>
+											)}
 										</td>
 										<PaymentForm modalStatus={this.state.modalStatus} handleModalStatus={this.handleModalStatus} _id={res._id} />
 									</tr>

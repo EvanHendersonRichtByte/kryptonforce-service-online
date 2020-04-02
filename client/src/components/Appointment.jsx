@@ -73,7 +73,7 @@ export default class Appointment extends Component {
 			})
 			.then((res) => {
 				alert('Your issue has saved successfully');
-				window.location.assign('/');
+				window.location.assign('/issue-list');
 			})
 			.catch((err) => console.log(err));
 	}
