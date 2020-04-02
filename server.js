@@ -382,6 +382,22 @@ app.put('/issue/payment/:id', (req, res) => {
 	});
 });
 
+app.put('/issue/close/:id', (req, res) => {
+	Issue.findByIdAndUpdate(
+		req.params.id,
+		{
+			userId: req.body.userId
+		},
+		(err, issue) => {
+			try {
+				console.log(issue);
+			} catch (error) {
+				console.log(error);
+			}
+		}
+	);
+});
+
 //
 // ─── UPDATE: GET ISSUE BASED USER ID ─────────────────────────────────────────────
 //

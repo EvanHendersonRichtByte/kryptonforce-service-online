@@ -11,9 +11,11 @@ export default class PaymentForm extends Component {
 			image: null
 		};
 	}
+
 	handleFileChange(e) {
 		this.setState({ image: e.target.files[0] });
 	}
+
 	handleFormSubmit(e) {
 		e.preventDefault();
 		const config = { headers: { 'content-type': 'multipart/form-data' } };
@@ -29,6 +31,7 @@ export default class PaymentForm extends Component {
 			})
 			.catch((err) => console.log(err));
 	}
+
 	render() {
 		const customStyles = {
 			content: {
