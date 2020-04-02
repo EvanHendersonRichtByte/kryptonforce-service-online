@@ -1,9 +1,13 @@
 # KryptoForce Online Services
 > Kryptoforce is an online service using MERN stack, we are building reliable specimens and ensure your maximum convenience in to our effort.
 
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+
+[![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://github.com/EvanHendersonRichtByte) [![devDependencies Status](https://david-dm.org/dwyl/hapi-auth-jwt2/dev-status.svg)](https://github.com/EvanHendersonRichtByte) [![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/dwyl/hapi-auth-jwt2.svg?maxAge=2592000)](https://github.com/EvanHendersonRichtByte) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/EvanHendersonRichtByte) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/EvanHendersonRichtByte)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/EvanHendersonRichtByte) 
+
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
+* [Screenshot](#screenshots)
 * [Front-End Technologies](#frontEndTechnologies)
 * [Back-End Technologies](#backEndTechnologies)
 * [Setup](#setup)
@@ -46,19 +50,20 @@ for running client :
 ## Features
 List of features ready and TODOs for future development
 * User appointment system
+* Employee asigned task
+* Appointment bug handling (Require profile setup)
+* Admin visual data analysis
 
 To-do list:
-* Admin visual data analysis
 * Source code refactor
 * Switch login statement (currently using if statement)
 * Toast popup
-* Employee asigned task
-* Appointment bug handling (Require profile setup)
+
 ## Status
 Project is: 
 
 ```diff
-! in progress
++ released
 ```
 
 ## Contact
