@@ -1,0 +1,28 @@
+@font-face {
+  font-family: AMDRTG;
+  src: url("../res/fonts/AMDRTG.ttf");
+}
+
+#header {
+  background-image: url("../res/tools.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  height: 28em;
+}
+
+#index-text-center {
+  margin-top: 9em;
+}
+
+#nav-title {
+  font-family: AMDRTG;
+  text-transform: lowercase;
+  font-size: medium;
+}
+
+#kr-nav {
+    color: white !important;
+}
